@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button:focus {
+  outline: 0;
+}
+
+div {
+  outline: none;
+}
+
+header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222424;
+  color: #ffffff;
+  padding: 25px;
+}
+
+.additional-tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-logo {
+  display: inline-block;
+  height: 25px;
+  margin: 0px 15px 0px 0px;
+}
+
+.image-logo-d2g {
+  display: inline-block;
+  height: 50px;
+  margin: 0px 15px 0px 0px;
+}
+
+.gh-button {
+  margin: 5px;
+}
+
+.body {
+  background-color: #ececec;
+  padding: 25px 4px;
+  text-align: center;
+}
+
+.file-movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+  height: 100%;
+}
+
+.file-name {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.possible-downloaded-movie {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-container {
+  margin-top: 30px;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+.movies-downloaded {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.actions-on-downloaded-movie {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.video-player {
+  background-color: #000;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 30px 0px rgba(10, 10, 10, 0.75);
+  width: 100%;
+}
+
+.rxplayer-video {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.controls-player {
+  width: 100%;
+  margin: auto;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.error-displayer {
+  color: white;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  padding: 25px;
+}
+
+.thumbnail-segment {
+  width: 350px;
+  height: 207px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.32),
+    0 2px 10px 0 rgba(34, 36, 38, 0.15);
+  border-top: 2px solid #ec3655 !important;
+}
+
+.--custom {
+  border-top: 2px solid #fbbd08 !important;
+}
+
+.thumbnail-file {
+  height: 150px;
+  width: 350px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.thumbnail-bta {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  font-weight: bold;
+  align-items: center;
+}
+
+/* ProgressBar */
+.progressBarSvg {
+  cursor: pointer;
+}
+
+.progressBarSvgWhInterac {
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-background {
+  stroke: #ddd;
+}
+
+.circle-progress {
+  stroke: rgb(236, 54, 85);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.actions {
+  cursor: pointer;
+}
+
+.circle-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  fill: #ec3655;
+}
+
+/* ----- */
+
+.quality-btn {
+  border: solid 1px #d1d1d1;
+  margin: 5px;
+  height: 41px;
+  color: #2f3132;
+  background-color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.quality-btn.selected {
+  background-color: #ec3655;
+  color: #fff;
+  border: 0;
+}
+
+.hidden-actions {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  margin-top: -94px;
+  margin-left: -15px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.loader {
+  position: absolute;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.inputs-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-custom {
+  width: 300px !important;
+  margin: 3px 0;
+}
+
+.header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  margin: 0;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.21428571em;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 0.67857143em 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  -webkit-transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease,
+    -webkit-box-shadow 0.1s ease;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.submit-button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #ec3655 none;
+  color: white;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin: 0 0.25em 0 0;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  -webkit-box-shadow: 0 0 0 1px transparent inset,
+    0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease,
+    color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease,
+    background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease,
+    box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease,
+    box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  will-change: "";
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 5px;
+}
+
+.customDownload-actions {
+  display: flex;
+  align-items: end;
+}
+
+.transport {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.transportOptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.transport-btn {
+  height: 30px;
+}
