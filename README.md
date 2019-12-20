@@ -2,6 +2,7 @@
 
 <div align="center">
     <img src="./src/assets/logo_black-d2g.png" alt="rx-player-d2g" width="300">
+    <br/><br/>
 </div>
 
 > Need [`feat/offline-playback-download`](https://github.com/canalplus/rx-player/pull/548) branch on rx-player to work.
